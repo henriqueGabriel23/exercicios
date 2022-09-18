@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Plaster&family=Roboto&display=swap');
+main{
+    width: 1140px;
+    margin: auto;
+}
+
+.heard{
+    height: 100px;
+    width: 100%;
+    background-color: #000000 ;
+}
+.logo{
+    width: 300px;
+    display:flex;
+}
+
+*{
+    margin: 0%;
+    
+}
+h1{
+    color:red ; text-align: center;
+    font-family:'Roboto', sans-serif;
+}
+.img1,
+.p1{
+    
+    margin:100px;
+    height: auto; 
+
+}
+.Flex{
+    display: flex;
+}
+div{
+    text-align: end;
+}
+.filmes{
+    flex-direction: column;
+}
+footer{
+    background-color: red;
+    margin: 20px;
+    height: 60px;
+}
+.final{
+    color: white;
+    text-align: center;
+    height: 60px;
+    margin: 10px;
+
+}

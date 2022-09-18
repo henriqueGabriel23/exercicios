@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+
+main{
+    width: 1140px;
+    margin: auto;
+}
+img{
+    width: 250px;
+}
+header{
+    display: flex;
+
+}
+.bemvindo{
+    width: 100%; 
+}
+h2{
+    font-family: 'Pinyon Script', cursive;
+    text-align: center;
+    margin: 72px;
+}
+.text1{
+    display: flex;
+}
+.part2,
+.part3{
+    display: flex;
+    
+}
+.text2,
+.text3{
+    margin: auto;
+}
+
+footer{
+    
+    background-color: #000;
+    width: auto;
+    height: 90px;
+    color: white;
+    text-align: center;
+  
+}
