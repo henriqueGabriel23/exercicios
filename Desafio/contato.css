@@ -1,0 +1,106 @@
+header{
+    width: 1200px;
+    align-items: center;
+    margin: auto;
+}
+.header{
+     display: flex;
+    justify-content: space-between;
+    justify-items: end;
+    margin: auto;
+    
+}
+nav{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-bottom: 0%;
+}
+nav a{
+    text-decoration: none;
+    display: block;
+    width: 39px;
+    height: 13px;
+    padding: 20px;
+    background-color: white;
+    color: black;
+}
+nav a:hover{
+    background-color: #660027;
+    color: white;
+}
+nav {
+    list-style-type: none;
+}
+fieldset{
+    width: 780px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    width: 128px;
+    height: 42px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #660027;
+}
+.contato{
+    margin-bottom: 29px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+label{
+    width: 175px;
+    height: 28px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 10px;
+}
+input{
+    Width:400px;
+    Height:42px;
+}
+button{
+    width: 128px;
+    height: 42px;
+    background: #660027;
+    border: 2px solid #660027;
+    border-radius: 4px;
+    color: white;
+
+}
+.menssagem{
+    width: 400px;
+    height: 125px;
+}
+.botao{
+    width: 400px;
+}
+main{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.footer{
+    width: 400px;
+    height: 700px;
+    background: #660027;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
