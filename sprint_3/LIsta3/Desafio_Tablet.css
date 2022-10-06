@@ -1,0 +1,16 @@
+@media(max-width :600px){
+.Flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main{
+    width: 80%;
+    height: 1000px;
+}
+.tamanho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}

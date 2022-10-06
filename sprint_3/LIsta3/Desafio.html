@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Desafio.css">
+    <link rel="stylesheet" href="Desafio_Mobile.css">
+    <link rel="stylesheet" href="Desafio_Tablet.css">
+</head>
+<body>
+    <div class="tamanho">
+
+        <main>
+
+            <div class="titulo">
+                <p class="Letra_titulo">O Jogo</p>
+            </div>
+        <div class="Flex">
+            <div class="part1">
+                <div class="imagem">
+                <img src="./Foto_Perfil.png" alt="Foto_Perfil">
+                </div>
+                <p>Nick:</p><br>
+                <input type="text" id="nick"><br>
+                <p>Intevalo:</p><br>
+                <select id="dificuldade">
+                    <option value="um" id="um">Facil: 1 ao 10</option>
+                    <option value="dois" id="dois">Medio 1 ao 50</option>
+                    <option value="tres" id="tres" >Dificil 1 ao 100</option>
+                </select><br>
+                <button type="submit" id="botao1">Começar</button>
+            </div>
+            <div class="linha"></div>
+            <div class="part2">
+                <div id="Ola"></div>
+                <p>Digite um Número:</p> <br>
+                <input type="text" id="numero"><br>
+                <div id="Resultado"><button class="button" id="botao2">Jogar</button></div>
+                <div id="tentativas"></div>
+            </div>
+        </div>        
+        </main>
+
+    </div>
+    <script src="Desafio.js"></script>
+</body>
+</html>

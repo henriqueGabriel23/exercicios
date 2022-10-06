@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&family=Squada+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #F2890D;
+    display: flex;
+}
+.tamanho{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+}
+main{
+    width: 100%;
+    height: 645px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.titulo{
+    width: 258px;
+    height: 100px;
+    background: #1180E7;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -50px;
+}
+.Letra_titulo{
+    width: 252px;
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    
+    font-family: 'Squada One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 74px;
+    color: #000000;
+
+}
+.part1{
+    
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.linha{
+    border: 3px solid #B0A3A3;
+}
+.part2{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    align-items: center;
+}
+img{
+    width: 200px;
+    height: 200px;
+    display: flex;
+}
+.imagem{
+    display: flex;
+    justify-content: center;
+}
+button{
+    width: 350px;
+    height: 42px;
+    background: #1180E6;
+    border: 3px solid #000000;
+    border-radius: 20px;
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+}
+.button{
+    background: #F2890D;
+    border: 3px solid #000000;
+    border-radius: 20px;
+}
+.Flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+input{
+    width: 350px;
+    height: 42px;
+}
+select{
+    width: 350px;
+    height: 42px;
+}
+#Ola{
+    width:350px;
+    height:145px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+}
+#nick{
+    font-weight: 900;
+}
+#tentativas{
+    width: 350px;
+    height: 103px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+}

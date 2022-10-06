@@ -1,0 +1,60 @@
+body{
+    margin: auto;
+    font-family: cursive;
+    color: #0e0c0cb2;
+}
+.cor{
+    background-color: white;
+    height: 40px;
+}
+.cards{
+    margin: auto;
+    background-color: yellow;
+    height: 377px;
+    width: 332px;
+    display: flex;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.card1{
+    margin: auto;
+    background-color: white;
+    height: 278px;
+    width: 222px;
+    border-radius:5%;
+    
+    
+}
+img{
+    margin: auto;
+    width: 140px;
+    height: 70px;
+    display: flex;
+}
+#nome{
+    text-align: center;
+    border-bottom: 3px solid aqua;
+    width: 221px;
+    display: flex;
+    justify-content: center;
+}
+#peso,
+#altura{
+    display: flex;
+    align-items: center;
+}
+.divisor{
+    display: flex;
+    justify-content: space-evenly;
+}
+.divisor1,
+.divisor2,
+.divisor3{
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+}
+
