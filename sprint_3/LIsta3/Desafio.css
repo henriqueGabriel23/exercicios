@@ -61,6 +61,8 @@ main{
 }
 .linha{
     border: 3px solid #B0A3A3;
+    height: 416px;
+    margin-block: auto;
 }
 .part2{
     display: flex;
@@ -94,10 +96,15 @@ button{
     font-size: 18px;
     line-height: 18px;
 }
+button:hover{
+    color: white;
+}
+
 .button{
     background: #F2890D;
     border: 3px solid #000000;
     border-radius: 20px;
+    margin-bottom: 20px;
 }
 .Flex{
     width: 100%;
@@ -127,7 +134,15 @@ select{
 }
 #tentativas{
     width: 350px;
-    height: 103px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+}
+#tentativas2{
+    width: 350px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;

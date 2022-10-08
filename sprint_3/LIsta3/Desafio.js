@@ -1,12 +1,14 @@
 let Nome = document.getElementById('nick')
 let Dificuldade = document.getElementById('dificuldade')
-let Botao1 = document.getElementById('botao1')
-let Botao2 = document.getElementById('botao2')
 let Ola = document.getElementById('Ola')
 let Numero = document.getElementById('numero')
 let Tentativas = document.getElementById('tentativas')
+let Tentativas2 = document.getElementById('tentativas2')
 let Recarregar = document.getElementById('Recarregar')
+let Botao1 = document.getElementById('botao1')
+let Botao2 = document.getElementById('botao2')
 let Botao3 = document.getElementById('botao3')
+
 let Valor = 0;
 let Vidas = 3;
 
@@ -18,18 +20,20 @@ const Mensagem = () =>{
 }
 const Jogar = () =>{
     if (Numero.value == Valor) {
-        alert(Tentativas.innerHTML=('Parabéns, você conseguiu adivinhar!'));
+        alert (Tentativas.innerHTML = ('Parabéns, você conseguiu adivinhar!'));
+        window.location.reload()
     }
     else if(Numero.value > Valor){
-        alert(Tentativas.innerHTML = ('O numero é menor'))
+        Tentativas.innerHTML = ('O numero é menor')
     }
     else{
-        alert(Tentativas.innerHTML = ('O número é maior'))
+        Tentativas.innerHTML = ('O número é maior')
     }
     console.log(Numero.value);
     console.log(Valor);
     Vidas--
-    Tentativas.innerHTML = '<br>'+ 'Você ainda tem ' +Vidas+ ' tentativas!'
+    Tentativas.innerHTML
+    Tentativas2.innerHTML = '<br>'+ 'Você ainda tem ' +Vidas+ ' tentativas!'
 }
 const dificuldade = ()=>{
     if(Dificuldade.value == 'um'){
@@ -38,7 +42,7 @@ const dificuldade = ()=>{
     else if( Dificuldade.value == 'dois'){
         Valor = Math.floor(Math.random()*50)
     }
-    else if(Dificuldade.value == 'tres' ){
+    else if (Dificuldade.value == 'tres' ){
         Valor = Math.floor(Math.random()*100)
     }
 
