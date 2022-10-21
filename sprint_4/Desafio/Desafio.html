@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Desafio.css">
+</head>
+<body>
+    <header>
+        <h2>SyncTur</h2>
+    </header>
+    <main>
+        <div class="Cadastrar_Pacotes">
+            <h1 class="titulo">Cadastrar Pacotes</h1>
+                <div class="Informações_Pessoais">
+                    <div class="separação">
+                            <p>Pacote:</p>
+                            <input type="text" class="InputNome" placeholder="Digite nome completo" id="Nome" required>
+                        <div class="espaçamento_status_Data">
+                            <div class="espaçamento_status">
+                                
+                                <p>status</p>
+                                <p class="Letra_status"><input type="checkbox" id="checkboxAtivo">Ativo</p>
+                                <p class="Letra_status"><input type="checkbox" id="checkboxInativo">Inativo</p>
+                                
+                            </div>
+                            <div class="espaçamento_Data">
+                                <p>Data de Viagem</p>
+                                <input type="date" class="InputData" name="Data" id="Data">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="separação2">
+                        <p>Descrição:</p>
+                        <!-- texto -->
+                        <textarea class="InputDescricao" placeholder="Descrição do Pacote" id="Descricao" required ></textarea>
+                    </div>
+                   
+                </div>
+                <div class="Centralizar_botao" id="Botao" ><button onclick="cadastrar()" class="Cadastrar" id="BotaoCadastrar">Cadastrar</button></div> 
+        </div>
+
+        <div class="Pacotes" id="Pacotes">
+<!-- 
+            <div class="Pacote" id="pacote1">
+                <h2>Pacote X</h2>
+                <p class="Letra_do_Pacote"></p>
+                <p>Data da viagem: 17/08/22</p>
+                <div class="Flex_Botoes">
+                    <button class="BotaoEditar">Editar</button>
+                    <button class="BotaoExcluir">Excluir</button>
+                </div>
+
+            </div> -->
+
+            <!-- <div class="Pacote">
+                <h2>Pacote Y</h2>
+                <p class="Letra_do_Pacote">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p>Data da viagem: 17/08/22</p>
+                <div class="Flex_Botoes">
+                    <button class="BotaoEditar">Editar</button>
+                    <button class="BotaoExcluir">Excluir</button>
+                </div>
+
+            </div> -->
+
+            <!-- <div class="Pacote">
+                <h2>Pacote Z</h2>
+                <p class="Letra_do_Pacote">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p>Data da viagem: 17/08/22</p>
+                <div class="Flex_Botoes">
+                    <button class="BotaoEditar">Editar</button>
+                    <button class="BotaoExcluir">Excluir</button>
+                </div>
+
+            </div> -->
+           
+            <!-- </div> -->
+
+        </div>
+    </main>
+    <footer>
+            <h2 class="SyncTur_footer">SyncTur</h2>
+
+            <div class="Linha"></div>
+
+            <p class="Letra_footer">
+                Company Inc., 8901 Marmora Road, Glasgow, D04 89GR
+                Call us now toll free: (800)2345-6789
+                Customer support: support@demolink.org
+                Skype: sample-username
+            </p>
+    </footer>
+    <script src="./Desafio.js"></script>
+</body>
+</html>
