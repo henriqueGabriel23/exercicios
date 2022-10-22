@@ -8,6 +8,7 @@ let botaoExcluir = document.getElementById("botaoExcluir")!
 let listagemDePacote = document.getElementById("Pacotes")!;
 let pacotes: Array<Pacote> = []
 let iD:number; 
+let resposta:boolean;
 //gerar os pacotes em html
 const pegarPacote = () => {
      let listagem:string =``;  
@@ -39,7 +40,17 @@ const cadastrar = () =>{
     pegarPacote()
 }
 const excluir = (index:number)=>{
-    pacotes.splice(index, 1)
+    resposta = confirm("Você tem certeza que deseja excluir?")
+    if (resposta == true) {
+        pacotes.splice(index, 1)
+        alert("Pacote excluido")
+    }
+    else{
+        alert("Exclusão cancelada")
+    }
+
+
+
     pegarPacote()
 }
  

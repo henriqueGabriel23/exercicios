@@ -9,6 +9,7 @@ let botaoExcluir = document.getElementById("botaoExcluir");
 let listagemDePacote = document.getElementById("Pacotes");
 let pacotes = [];
 let iD;
+let resposta;
 //gerar os pacotes em html
 const pegarPacote = () => {
     let listagem = ``;
@@ -33,7 +34,14 @@ const cadastrar = () => {
     pegarPacote();
 };
 const excluir = (index) => {
-    pacotes.splice(index, 1);
+    resposta = confirm("Você tem certeza que deseja excluir?");
+    if (resposta == true) {
+        pacotes.splice(index, 1);
+        alert("Pacote excluido");
+    }
+    else {
+        alert("Exclusão cancelada");
+    }
     pegarPacote();
 };
 const editar = (nome, descricao, data, status, id) => {
