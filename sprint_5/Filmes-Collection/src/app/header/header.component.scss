@@ -1,0 +1,61 @@
+.header{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    background: #9BD2DE;
+}
+.Logo .Collection{
+    font-family: 'Rosarivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 66px;
+
+    color: #686666;
+}
+.imgLogo{
+    display: flex;
+    align-items: center;
+    width: 143px;
+    justify-content: space-between;
+
+}
+.TituloLogo{
+    display: flex;
+    height: 86px;
+    flex-direction: column;
+}
+.Menu{
+    width: 375px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Menu a{
+    text-decoration: none;
+    color: black;
+}
+.TituloLogo p,
+.TituloLogo .Collection{
+    height: 0px;
+}
+.filmes{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 48px;
+    
+    color: #616162;
+    
+}
+.coletanea{
+    max-width: 443px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+
+}

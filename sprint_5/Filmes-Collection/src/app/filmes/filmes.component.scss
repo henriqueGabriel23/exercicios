@@ -1,0 +1,83 @@
+main{
+    max-width: 1200px;
+    margin: auto;
+}
+.titulo{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #000000;
+
+
+}
+.img{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.input{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+.subtitulo{
+    margin-left: 90px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+
+color: #000000;
+}
+.input input,
+.input select{
+    width: 400px;
+height: 58px;
+}
+.input button{
+    width: 180px;
+height: 58px;
+
+color: white;
+background: #F6511D;
+}
+
+
+
+.informacoesDoFilme{
+    display: flex;
+    flex-direction: column;
+    margin-top: 65px;
+}
+.filmes{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 56px;
+    align-items: center;
+}
+.editar{
+    width: 125px;
+    height: 35px;
+    color: white;
+    background: #F6511D;
+    border: 2px solid #F6511D;
+    border-radius: 20px;
+}
+.excluir{
+    width: 125px;
+    height: 35px;
+    background: #41B8D2;
+    border: 2px solid #41B8D2;
+    border-radius: 20px
+}
+.informacoesDoFilme p{
+    width: 300px;
+}
