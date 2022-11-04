@@ -1,18 +1,18 @@
-
-.Titulo{
+.Titulo {
     text-align: center;
     margin-top: 30px;
     font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 36px;
-line-height: 42px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
 
-color: #000000;
+    color: #000000;
 
 }
-.Texto{
-    
+
+.Texto {
+
     margin-top: 50px;
     font-family: 'Roboto';
     font-style: normal;
@@ -20,40 +20,45 @@ color: #000000;
     font-size: 24px;
     line-height: 28px;
 
-color: #000000;
+    color: #000000;
 
 }
-.TextB{
+
+.TextB {
     font-weight: 700;
 
 }
-.flex{
+
+.flex {
     display: flex;
     margin-top: 40px;
 }
-.Filmes{
 
-    width: 60%;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 28px;
+.Filmes {
 
-color: #000000;
-
-}
-.Categoria{
     width: 60%;
     font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 28px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
 
-color: #000000;
+    color: #000000;
 
 }
-p{
+
+.Categoria {
+    width: 60%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #000000;
+
+}
+
+p {
     width: 90%;
 }
