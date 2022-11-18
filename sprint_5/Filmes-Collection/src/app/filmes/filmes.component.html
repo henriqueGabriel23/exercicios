@@ -6,63 +6,32 @@
 </div>
 <p class="subtitulo">Cadastrar Filmes</p>
 <div class="input">
-    
+    <form [formGroup]="form" >
     <input type="text" placeholder="Titulo do Filme">
-    <select name="Genero" id="Genero">
-        <option> Gêneros</option>
-        <option value="1">Ação</option>
-        <option value="2">Aventura</option>
-        <option value="3">Cinema de Arte</option>
-        <option value="4">Chanchada</option>
-        <option value="5">Comédia</option>
-        <option value="6">Comédia de ação</option>
-        <option value="7">Comédia de terror</option>
-        <option value="8">Comédia dramática</option>
-        <option value="9">Comédia romântica</option>
-        <option value="10">Dança</option>
-        <option value="11">Documentário</option>
-        <option value="12">Docuficção</option>
-        <option value="13">Drama</option>
-        <option value="14">Espionagem</option>
-        <option value="15">Faroeste</option>
-        <option value="16">Fantasia</option>
-        <option value="17">Fantasia científica</option>
-        <option value="18">Ficção científica</option>
-        <option value="19">Filmes com truques</option>
-        <option value="20">Filmes de guerra</option>
-        <option value="21">Mistério</option>
-        <option value="22">Musical</option>
-        <option value="23">Filme policial</option>
-        <option value="24">Romance</option>
-        <option value="25">Terror</option>
-        <option value="26">Thriller</option>
+    <select name="Genero" formControlName="generoId" id="genero" >
+        <option [value]="item.id" *ngFor="let item of genero; index as i;">{{item.genero}}</option>
     </select>
-    <button>Salvar</button>
+    <button (click)="salvarDadosFilmes()" *ngIf="!verificarEditar" >Salvar</button>
+    <button (click)="EditarCliente1()" *ngIf="verificarEditar" >Editar</button>
+</form>
 </div>
 
 <div class="informacoesDoFilme">
 
-    <div class="filmes">
-    <p>Os outros</p>
-    <p>Terror</p>
-    <button class="editar">Editar</button>
-    <button class="excluir">Excluir</button>
-    </div>
-    
-    <div class="filmes">
-    <p>Até o último homem</p>
-    <p>Ação</p>
-    <button class="editar">Editar</button>
-    <button class="excluir">Excluir</button>
-    </div>
-    
-    <div class="filmes">
-    <p>O máscara</p>
-    <p>Comédia</p>
-    <button class="editar">Editar</button>
-    <button class="excluir">Excluir</button>
-    </div>
+    <div class="filmes" *ngFor="let item of filmes; index as i;">
+    <p>{{item.nome}}</p>
+    <p>{{item.genero?.genero}}</p>
+    <button class="editar" (click)="EditarCliente2(item)">Editar</button>
+    <button class="excluir" [swal]="{ 
+        title: 'ATENCAO!!!',
+        text: 'Tem certeza que deseja excluir '+item.nome+'?',
+        showDenyButton:true,
+        denyButtonText:'Não',
+        confirmButtonText: 'Sim',
         
+        icon:'warning'
+    }" (confirm)="deleteDadosFilmes(item.id)">Excluir</button>
+    </div>
     </div>
     
 

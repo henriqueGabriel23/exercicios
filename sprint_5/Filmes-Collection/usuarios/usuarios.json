@@ -1,0 +1,28 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Henrique",
+      "email": "henrique@gmail.com",
+      "telefone": "999999999"
+    }
+  ],
+  "filmes": [
+    {
+      "id": 1,
+      "nome": "Megamente",
+      "generoId": 1
+    },
+    {
+      "id": 2,
+      "nome": "",
+      "generoId": 1
+    }
+  ],
+  "generos": [
+    {
+      "id": 1,
+      "genero": "Aventura"
+    }
+  ]
+}

@@ -1,52 +1,61 @@
 <app-header></app-header>
 <main>
-<p class="titulo">Cadastro</p>
-<div class="cadastro">
-    <div class="input_cadastro">
-        <p>Nome:</p>
-        <input type="text">
-        <button>Cadastrar</button>
+    <p class="titulo">Cadastro</p>
+
+    <form [formGroup]="form">
+        <div class="cadastro">
+            <div class="input_cadastro">
+                <p>Nome:</p>
+                <input type="text" formControlName="nome" name="nome" placeholder="Digite seu nome" required>
+                <button (click)="salvarDadosUsuario()" *ngIf="!verificarEditar">Cadastrar</button>
+                <button (click)="EditarCliente1()"*ngIf="verificarEditar" >Editar</button>
+            </div>
+            <div class="input_cadastro">
+                <p>E-mail:</p>
+                <input type="email" formControlName="email" name="email" placeholder="example@example.com" required>
+            </div>
+            <div class="input_cadastro">
+                <p>Telefone:</p>
+                <input type="number" formControlName="telefone" name="telefone" placeholder="Seu Telefone" required>
+            </div>
+
+        </div>
+    </form>
+
+    <div class="informacoesDoUsuario">
+
+        <div class="usuario" *ngFor="let item of usuarios; index as i;">
+
+            <p>{{item.nome}}</p>
+            <p>{{item.email}}</p>
+            <p>{{item.telefone}}</p>
+            <button class="editar" (click)="EditarCliente2(item)">Editar</button>
+            <button class="excluir" [swal]="{ 
+            title: 'ATENCAO!!!',
+            text: 'Tem certeza que deseja excluir '+item.nome+'?',
+            showDenyButton:true,
+            denyButtonText:'Não',
+            confirmButtonText: 'Sim',
+            
+            icon:'warning'
+        }" (confirm)="deleteDadosUsuario(item.id)">Excluir</button>
+        </div>
     </div>
-    <div class="input_cadastro">
-        <p>E-mail:</p>
-        <input type="text">
-    </div>
-    <div class="input_cadastro">
-        <p>Telefone:</p>
-        <input type="text">
-    </div>
-    
-</div>
-
-
-<div class="informacoesDoUsuario">
-
-<div class="usuario">
-<p>Paulo Andre</p>
-<p>paulo@email.com</p>
-<p>3349 6788</p>
-<button class="editar">Editar</button>
-<button class="excluir">Excluir</button>
-</div>
-
-<div class="usuario">
-<p>Marcos Lucio</p>
-<p>marcos@email.com</p>
-<p>3349 6788</p>
-<button class="editar">Editar</button>
-<button class="excluir">Excluir</button>
-</div>
-
-<div class="usuario">
-<p>Laura Port</p>
-<p>laura@email.com</p>
-<p>3349 6788</p>
-<button class="editar">Editar</button>
-<button class="excluir">Excluir</button>
-</div>
-    
-</div>
 </main>
 
 
 <app-footer></app-footer>
+
+
+
+
+
+
+
+
+
+<!-- Exemplo formControl -->
+<!-- <label for="name">Name:</label>
+<input type="text" id="name" [formControl]="name">
+<button type="button" (click)="updateName()">Update Name</button> -->
+<!-- <p>value: {{name.value}}</p> -->

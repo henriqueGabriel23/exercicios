@@ -4,38 +4,35 @@
 <div class="img">
     <img src="../../assets/theater 1.png" alt="Teatro">
 </div>
-
+<form [formGroup]="form"  >
 <div class="cadastro">
     <div class="input_cadastro">
         <p>Cadastrar Gênero:</p>
-        <input type="text" placeholder="Gênero">
+        <input type="text" formControlName="genero" placeholder="Gênero">
     </div>
-    <button>Salvar</button>
+    <button (click)="salvarDadosGenero()" *ngIf="!verificarEditar">Salvar</button>
+    <button (click)="EditarCliente1()"*ngIf="verificarEditar" >Editar</button>
 </div>
+</form>
 
 
+<div class="informacoesDoUsuario" >
 
-<div class="informacoesDoUsuario">
-
-    <div class="usuario">
-    <p>Terror</p>
-    <button class="editar">Editar</button>
-    <button class="excluir">Excluir</button>
-    </div>
-    
-    <div class="usuario">
-    <p>Ação</p>
-    <button class="editar">Editar</button>
-    <button class="excluir">Excluir</button>
-    </div>
-    
-    <div class="usuario">
-    <p>Comédia</p>
-    <button class="editar">Editar</button>
-    <button class="excluir">Excluir</button>
-    </div>
+    <div class="usuario" *ngFor="let item of genero; index as i;">
+    <p>{{item.genero}}</p>
+    <button class="editar" (click)="EditarCliente2(item)">Editar</button>
+    <button class="excluir" [swal]="{ 
+        title: 'ATENCAO!!!',
+        text: 'Tem certeza que deseja excluir '+item.genero+'?',
+        showDenyButton:true,
+        denyButtonText:'Não',
+        confirmButtonText: 'Sim',
         
+        icon:'warning'
+    }" (confirm)="deleteDadosUsuario(item.id)">Excluir</button>
     </div>
+
+</div>
 
 </main>
 <app-footer></app-footer>

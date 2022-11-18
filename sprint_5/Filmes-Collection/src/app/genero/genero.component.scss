@@ -1,4 +1,4 @@
-.titulo{
+.titulo {
     margin-top: 30px;
     display: flex;
     justify-content: center;
@@ -12,46 +12,59 @@
 
 
 }
-.img{
+
+.img {
     display: flex;
     justify-content: center;
     margin-top: 30px;
 }
-.cadastro{
+
+.cadastro {
     display: flex;
     justify-content: space-evenly;
     margin-top: 40px;
 }
-.input_cadastro{
+
+.input_cadastro {
     display: flex;
     flex-direction: column;
-    
-}
-button{
-    width: 180px;
-height: 58px;
-margin-top: 30px;
-background: #F6511D;
-color: white;
 
 }
-input{
+
+button {
+    width: 180px;
+    height: 58px;
+    margin-top: 30px;
+    background: #F6511D;
+    color: white;
+
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+
+input {
     width: 320px;
     height: 58px;
     box-sizing: border-box;
     border: 1px solid #000000;
 }
-.informacoesDoUsuario{
+
+.informacoesDoUsuario {
     display: flex;
     flex-direction: column;
 }
-.usuario{
+
+.usuario {
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
     align-items: center;
 }
-.editar{
+
+.editar {
     width: 125px;
     height: 35px;
     color: white;
@@ -59,13 +72,15 @@ input{
     border: 2px solid #F6511D;
     border-radius: 20px;
 }
-.excluir{
+
+.excluir {
     width: 125px;
     height: 35px;
     background: #41B8D2;
     border: 2px solid #41B8D2;
     border-radius: 20px
 }
+
 .informacoesDoUsuario p {
-    width: 300px;
+    width: 627px;
 }
