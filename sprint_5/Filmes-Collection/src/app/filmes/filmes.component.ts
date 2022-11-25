@@ -26,7 +26,7 @@ export class FilmesComponent implements OnInit {
 
   ngOnInit(): void {
     this.form = this.fb.group({
-      nome:"",
+      filme:"",
       generoId:""
      
     })
@@ -63,13 +63,13 @@ export class FilmesComponent implements OnInit {
   salvarDadosFilmes() {
 
     const id = (this.filmes[(this.filmes.length) - 1].id) + 1
-    const filmes = this.form.controls['nome'].value
+    const filmes = this.form.controls['filme'].value
     const genero = parseInt((this.form.controls["generoId"].value))
 
 
     const filme: CriarFilmes = {
       id: id,
-      nome: filmes,
+      filme: filmes,
       generoId: genero
     }
     console.log(filmes)
@@ -132,10 +132,10 @@ export class FilmesComponent implements OnInit {
 
   EditarCliente1() {
     const id = this.filmesId
-    const filmes = this.form.controls["filmes"].value;
-    const genero = this.form.controls["genero"].value;
+    const filmes = this.form.controls["filme"].value;
+    const genero = this.form.controls["generoId"].value;
 
-    const filme: CriarFilmes = { id: id, nome: filmes,generoId:genero }
+    const filme: CriarFilmes = { id: id, filme: filmes,generoId:genero }
 
     this.salvarFilmesService.editarFilmes(filme).subscribe({
       next: () => {
@@ -154,8 +154,8 @@ export class FilmesComponent implements OnInit {
 
   EditarCliente2(itemUsuario: CriarFilmes) {
     this.filmesId = itemUsuario.id
-    this.form.controls["filmes"].setValue(itemUsuario.nome)
-    this.form.controls["genero"].setValue(itemUsuario.generoId)
+    this.form.controls["filme"].setValue(itemUsuario.filme)
+    this.form.controls["generoId"].setValue(itemUsuario.generoId)
     this.verificarEditar = true
     Swal.fire({
       toast: true,

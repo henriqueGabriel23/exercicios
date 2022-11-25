@@ -6,7 +6,7 @@ export interface CriarUsuario{
 }
 export interface CriarFilmes{
     id:number
-    nome:string
+    filme:string
     generoId:number
     genero?:CriarGenero
 }

@@ -7,7 +7,7 @@
 <p class="subtitulo">Cadastrar Filmes</p>
 <div class="input">
     <form [formGroup]="form" >
-    <input type="text" placeholder="Titulo do Filme">
+    <input type="text" formControlName="filme" placeholder="Titulo do Filme">
     <select name="Genero" formControlName="generoId" id="genero" >
         <option [value]="item.id" *ngFor="let item of genero; index as i;">{{item.genero}}</option>
     </select>
@@ -19,12 +19,12 @@
 <div class="informacoesDoFilme">
 
     <div class="filmes" *ngFor="let item of filmes; index as i;">
-    <p>{{item.nome}}</p>
+    <p>{{item.filme}}</p>
     <p>{{item.genero?.genero}}</p>
     <button class="editar" (click)="EditarCliente2(item)">Editar</button>
     <button class="excluir" [swal]="{ 
         title: 'ATENCAO!!!',
-        text: 'Tem certeza que deseja excluir '+item.nome+'?',
+        text: 'Tem certeza que deseja excluir '+item.filme+'?',
         showDenyButton:true,
         denyButtonText:'Não',
         confirmButtonText: 'Sim',

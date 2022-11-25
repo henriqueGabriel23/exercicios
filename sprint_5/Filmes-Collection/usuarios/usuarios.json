@@ -10,19 +10,38 @@
   "filmes": [
     {
       "id": 1,
-      "nome": "Megamente",
+      "filme": "Megamente 2",
       "generoId": 1
     },
     {
-      "id": 2,
-      "nome": "",
+      "id": 3,
+      "filme": "",
       "generoId": 1
+    },
+    {
+      "id": 4,
+      "filme": "",
+      "generoId": 2
+    },
+    {
+      "id": 5,
+      "filme": "",
+      "generoId": 2
+    },
+    {
+      "id": 6,
+      "filme": "ffff",
+      "generoId": 2
     }
   ],
   "generos": [
     {
       "id": 1,
       "genero": "Aventura"
+    },
+    {
+      "id": 2,
+      "genero": "fantasia"
     }
   ]
 }
